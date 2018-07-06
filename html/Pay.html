@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="汤妈妈，公益，慈善，微信">
+	<meta name="description" content="苏州工业园区汤妈妈公益慈善中心是由工业园区服务业发展局指导管理，接受全社会监督的非营利性社会公益组织">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>个人支付</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    html{
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+    </style>
+</head>
+<body class="pay">
+<div class="head color1">
+    <li class="left">
+        <img src="img/dollar.png" alt="">
+        <div class="text">个人支付</div>
+    </li>
+    <li class="right"><a href=""><img src="img/back.png" alt="返回"></a></li>
+</div>
+<div class="main">
+    <div class="title">在线支付</div>
+    <div class="for">
+        <form>
+            <div class="fo">
+                <div class="l">数量：</div>
+                <div class="r"><input type="text"  readonly value="1" class="red"></div>
+            </div>
+            <div class="fo">
+                <div class="l">价格：</div>
+                <div class="r"><input type="text" readonly value="50.00" class="red"></div>
+            </div>
+            <div class="fo">
+                <div class="l">收款方：</div>
+                <div class="r"><input type="text" value="188****2510" readonly></div>
+            </div>
+            <div class="fo">
+                <div class="l">商品/服务：</div>
+                <div class="r"><input type="text" readonly value="0" class="fl"><div class="fr twf">台位费</div></div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bottom5">
+    <input class="butt color1" type="button" value="确定支付">
+</div>
+<div class="cover">
+    <div class="cover1 color1">
+        <div class="judge"><img src="img/true.png"></div>
+        <div class="text1">支付成功！</div>
+        <div class="button">
+            <input type="button" class="ensure" value="确定">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".butt").click(function(){
+            $(".cover").css("display","block");
+        })
+        $(".ensure").click(function(){
+            $(".cover").css("display","none");
+        })
+    });
+</script>
+</html>

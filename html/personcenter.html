@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+   <meta name="keywords" content="汤妈妈，公益，慈善，微信">
+	<meta name="description" content="苏州工业园区汤妈妈公益慈善中心是由工业园区服务业发展局指导管理，接受全社会监督的非营利性社会公益组织">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>个人中心</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body class="person">
+    <header>
+        <div class="headimg"><img src="img/headimg.png" alt=""></div>
+        <div class="headname">三色堇</div>
+    </header>
+    <div class="record-total">
+        <div class="fl pl-15">捐赠记录</div>
+        <div class="fr pr-15">总计：900元</div>
+    </div>
+    <!-- Raising -->
+    <div class="raising-container person" id="wrapper">
+       <div id="scroller">
+        <div id="pullDown">
+            <span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+        </div>
+        <ul class="record-list" id="thelist">
+          <li>
+            <div class="fl title pl-15">救助唇腭裂女童救助唇腭裂女童</div>
+            <div class="fr date pr-15">2016-03-28</div>
+            <div class="money">+100元</div>
+        </li>
+        <li>
+            <div class="fl title pl-15">救助唇腭裂女童</div>
+            <div class="fr date pr-15">2016-03-28</div>
+            <div class="money">+100元</div>
+        </li>
+        <li>
+            <div class="fl title pl-15">救助唇腭裂女童</div>
+            <div class="fr date pr-15">2016-03-28</div>
+            <div class="money">+100元</div>
+        </li>
+        <li>
+            <div class="fl title pl-15">救助唇腭裂女童</div>
+            <div class="fr date pr-15">2016-03-28</div>
+            <div class="money">+100元</div>
+        </li>  
+    </ul>
+    <div id="pullUp">
+        <span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+    </div>
+</div>
+</div>
+
+<!-- btmMenu -->
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/index-scroll.js"></script>
+<script type="text/javascript">
+var str=' <div class="fl title pl-15">救助唇腭裂女童</div>'+
+           ' <div class="fr date pr-15">2016-03-28</div>'+
+            '<div class="money">+100元</div>' ;
+
+document.addEventListener('DOMContentLoaded', function () { 
+     var load = new loaded("wrapper").makeScroll(str,"wrapper","thelist","pullUp","pullDown");
+ setTimeout(load, 200); 
+}, false);
+
+</script>
+</body>
+</html>
